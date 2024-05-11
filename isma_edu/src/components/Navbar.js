@@ -1,10 +1,15 @@
 import React from 'react';
 import '../style.css'; 
 
-function Navbar() {
-  return (
+function Navbar({ onNavbarItemClick, isNavbarOpen, toggleNavbar }) {
+    const handleItemClick = (content) => {
+      onNavbarItemClick(content);
+    };
+  
+    return (
     <div id="nav-bar">
-      <input id="nav-toggle" type="checkbox" />
+         <input id="nav-toggle" type="checkbox" checked={isNavbarOpen} onChange={toggleNavbar} />
+      
       <div id="nav-header">
         <a id="nav-title" href="#" >
           BirQadam
@@ -15,15 +20,15 @@ function Navbar() {
         <hr />
       </div>
       <div id="nav-content">
-        <div className="nav-button">
-          <i className="fas fa-palette"></i>
-          <span>Басты бет</span>
+         <div className="nav-button" onClick={() => handleItemClick('Басты бет')}>
+            <i className="fas fa-palette"></i>
+            <span>Басты бет</span>
         </div>
-        <div className="nav-button">
+        <div className="nav-button"  onClick={() => handleItemClick('Курстар')}>
           <i className="fas fa-images"></i>
           <span>Курстар</span>
         </div>
-        <div className="nav-button">
+        <div className="nav-button"  onClick={() => handleItemClick('Тесттер')}>
           <i className="fas fa-thumbtack"></i>
           <span>Тесттер</span>
         </div>

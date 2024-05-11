@@ -345,3 +345,115 @@ label[for=nav-footer-toggle] {
   border-radius: 99px;
   background-color: #D62929;
 }
+
+
+.selected_content {
+  padding: 20px;
+  border: 1px solid #ccc;
+  margin-top: 20px;
+  font-size: 1.2em;
+  margin-left: 295px; /* Set initial margin left */
+  transition: margin-left 0.2s; /* Add transition for smooth animation */
+}
+
+/* Adjust margin-left when navbar is hidden */
+
+
+/* Adjust margin-left when navbar is opened */
+.navbar-opened {
+  margin-left: 95px; /* Adjust margin left when navbar is opened */
+}
+
+
+.course-info {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+
+.course-description {
+  margin-bottom: 20px;
+}
+
+.course-header {
+  margin-bottom: 10px;
+}
+
+.course-title {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #333;
+}
+
+.course-subtitle {
+  font-size: 1.1em;
+  color: #666;
+}
+
+.buy-button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.buy-button:hover {
+  background-color: #0056b3;
+}
+
+.lesson-info {
+  margin-bottom: 20px;
+}
+
+.lesson-label {
+  font-weight: bold;
+}
+
+.lesson-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.lesson-icon {
+  width: 50px;
+  height: 50px;
+  background-color: #007bff;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.lesson-details {
+  flex: 1;
+}
+
+.lesson-title {
+  font-size: 1.2em;
+  margin: 0;
+}
+
+.lesson-status {
+  color: #666;
+  margin: 5px 0;
+}
+
+.lesson-progress {
+  font-size: 1.1em;
+  font-weight: bold;
+}
+
+.course-link {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.course-link:hover {
+  background-color: #0056b3;
+}
