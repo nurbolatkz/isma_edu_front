@@ -457,3 +457,72 @@ label[for=nav-footer-toggle] {
 .course-link:hover {
   background-color: #0056b3;
 }
+
+
+.attestation-btn {
+  background-color: #00aaff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  display: block;
+}
+
+.topics {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.topic {
+  background-color: #e7e7e7;
+  padding: 15px;
+  flex-grow: 1;
+  text-align: center;
+  border-radius: 5px;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.topic.selected {
+  background-color: #00aaff;
+  color: white;
+}
+
+.content-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.content-list.hidden {
+  display: none;
+}
+
+.content-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.content-list li span {
+  flex-grow: 1;
+}
+
+.concept-btn, .lock-btn {
+  background-color: #00aaff;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.lock-btn {
+  background-color: #555;
+}

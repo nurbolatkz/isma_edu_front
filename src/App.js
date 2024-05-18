@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './App.css';
 import Navbar from './components/Navbar';
-import CourseDetails from './components/CourseDetails';
+import SubjectsDetail from './components/SubjectsDetail';
 
 function App() {
   const [selectedContent, setSelectedContent] = useState('');
@@ -20,7 +20,7 @@ function App() {
       <Navbar onNavbarItemClick={handleNavbarItemClick} isNavbarOpen={isNavbarOpen} toggleNavbar={toggleNavbar} />
       <div className={`selected_content ${isNavbarOpen ? 'navbar-opened' : ''}`}>
         {selectedContent}
-        <CourseDetails/>
+        <SubjectsDetail />
       </div>
     </div>
   );
