@@ -15,9 +15,9 @@ function NavbarContainer({ onNavbarItemClick, isNavbarOpen, toggleNavbar }) {
       <Container>
         <Navbar.Brand href="#home">BirQadam.kz</Navbar.Brand>
         <Nav className="me-auto">
-          <Nav.Link href="#home">Басты бет</Nav.Link>
-          <Nav.Link href="#features">Пәндер</Nav.Link>
-          <Nav.Link href="#pricing">Тесттер</Nav.Link>
+          <Nav.Link href="/">Басты бет</Nav.Link>
+          <Nav.Link href="/subjects">Пәндер</Nav.Link>
+          <Nav.Link href="/tests">Тесттер</Nav.Link>
         </Nav>
       </Container>
     </Navbar>
