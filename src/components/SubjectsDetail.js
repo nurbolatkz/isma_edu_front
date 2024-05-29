@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { useParams } from "react-router-dom";
 import { Container, Row, Col, Button, ListGroup } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
+import "../App.css";  // Import the CSS file
 
 const subjectsTopicsData = {
   physics: [
@@ -170,8 +171,16 @@ const SubjectsDetail = () => {
                           variant="secondary"
                           className="mr-2 concept-btn"
                         >
-                          Конспект
+                          Түсіндірме
                         </Button>
+                        <Button
+                          variant="secondary"
+                          className="mr-2 concept-btn"
+                        >
+                          Тест өту
+                        </Button>
+                      </Col>
+                      <Col>
                         <Button
                           variant={content.isLocked ? "danger" : "success"}
                           className="lock-btn"

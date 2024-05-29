@@ -2,6 +2,7 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 import { Container, Row, Col, Card } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
+import "../App.css";  // Import the CSS file
 
 const subjects = [
   {
@@ -39,6 +40,7 @@ const SubjectList = () => {
 
   return (
     <Container>
+      <div className="intro_title">Негізгі пәндер</div>
       <Row>
         {subjects.map((subject) => (
           <Col key={subject.id} xs={12} sm={6} md={4} lg={3} className="mb-4">
