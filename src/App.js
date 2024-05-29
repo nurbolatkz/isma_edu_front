@@ -4,6 +4,7 @@ import "./App.css";
 import Navbar from "./components/Navbar";
 import SubjectsDetail from "./components/SubjectsDetail";
 import SubjectList from "./components/SubjectList";
+import QuizPage from "./components/QuizPage";
 
 function App() {
   const [selectedContent, setSelectedContent] = useState("");
@@ -28,6 +29,7 @@ function App() {
         <Routes>
           <Route path="/subjects" element={<SubjectList />} />
           <Route path="/subjects/:subjectId" element={<SubjectsDetail />} />
+          <Route path="/tests" element={<QuizPage />} />
         </Routes>
       </div>
     </Router>
