@@ -563,7 +563,9 @@ label[for="nav-footer-toggle"] {
 }
 
 .card {
-  transition: transform 0.2s, box-shadow 0.2s;
+  transition:
+    transform 0.2s,
+    box-shadow 0.2s;
 }
 
 .card:hover {
@@ -603,8 +605,6 @@ label[for="nav-footer-toggle"] {
     font-size: 1.1rem;
   }
 }
-
-
 
 /* SubjectsDetail.css */
 .attestation-btn {
@@ -666,5 +666,11 @@ label[for="nav-footer-toggle"] {
   }
 }
 
+button.mx-2 {
+  margin: 0 10px;
+}
 
-
+/* Add margin between question numbers in the list group */
+.list-group-item {
+  margin: 0 5px;
+}
